@@ -1,6 +1,4 @@
-# Readme Generator 
-
-  
+# Readme generator 
 
   -------------------------------------------------------------------------------
 
@@ -12,35 +10,27 @@
   - [Tests](#tests)
   - [Questions](#questions)
   - [License](#license)
-  
-
   ## Description
 
-  This is a description section
+  this is a description
 
   -------------------------------------------------------------------------------
-
-  
 
   ## Installation 
 
   
 
-  None needed
+  none needed
 
   -------------------------------------------------------------------------------
-
-  
 
   ## Usage 
 
   
 
-  run index.js in terminal 
+  run "node index.js" 
 
   -------------------------------------------------------------------------------
-
-  
 
   ## Contributing 
 
@@ -50,24 +40,18 @@
 
   -------------------------------------------------------------------------------
 
-  
-
   ## Tests 
 
   none 
 
   -------------------------------------------------------------------------------
 
-  
-
   ## Questions
   Email me at drantho@gmail.com with any questions. 
 
   -------------------------------------------------------------------------------
 
-  
-
   ## License
-  !(./MIT.png?raw=true) MIT 
+  ![MIT](MIT) MIT 
 
   www.MIT.com
