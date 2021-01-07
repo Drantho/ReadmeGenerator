@@ -1,14 +1,22 @@
-# Readme generator 
+# Readme Generator 
 
   
 
   -------------------------------------------------------------------------------
 
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  - [License](#license)
   
 
   ## Description
 
-  This is an automatic readme generator. Program will ask user for questions about sections that should be in readme files(e.g. Project name, description, contact, installation...) Readme will then be generated with markdown included.
+  This is a description section
 
   -------------------------------------------------------------------------------
 
@@ -18,7 +26,7 @@
 
   
 
-  None necessary. Node.js must be installed.
+  None needed
 
   -------------------------------------------------------------------------------
 
@@ -28,7 +36,7 @@
 
   
 
-  Open terminal, navigate to directory, run "node index.js" 
+  run index.js in terminal 
 
   -------------------------------------------------------------------------------
 

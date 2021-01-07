@@ -30,6 +30,14 @@ function generateMarkdown(data) {
   return `# ${data.title} \n
   \n
   -------------------------------------------------------------------------------\n
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  - [License](#license)
   \n
   ## Description\n
   ${data.description}\n
