@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 });
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = ["Project name: ", "Github username: ", "Email: ", "Description: ", "Installation: ", "Usage: ", "License: ", "Contributing: ", "Tests: ", "Questions: "];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
