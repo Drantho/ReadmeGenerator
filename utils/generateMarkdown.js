@@ -1,10 +1,14 @@
-
+const licenses = require("./licenses");
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license){
-    return `![${license}](${license})`;
+    const found = licenses.filter(licenseObj => {
+      return licenseObj.name === license
+    })[0].image;
+
+    return found;
   }
   return "";
 }
@@ -13,7 +17,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license){
-    return `www.${license}.com`;
+    return `[License](#license)`;
   }
   return "";
 }
@@ -22,7 +26,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license){
-    return license;
+    return `## License \n ${renderLicenseBadge(license)}`
   }
   return "";
 }
@@ -38,7 +42,7 @@ function generateMarkdown(data) {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-  - [License](#license)
+  ${renderLicenseLink(data.license)}
   ## Description\n
   ${data.description}\n
   -------------------------------------------------------------------------------\n
@@ -61,10 +65,13 @@ function generateMarkdown(data) {
   Me on github: https://github.com/${data.username} \n
   Email me at ${data.email} with any questions. \n
   -------------------------------------------------------------------------------\n
-  ## License
-  ${renderLicenseBadge(data.license)} ${renderLicenseSection(data.license)} \n
-  ${renderLicenseLink(data.license)}
-`;
+  
+   ${renderLicenseSection(data.license)} \n
+
+   ------------------------------------------------------------------------------\n
+   readme automatically created with Readme Generator \n
+   view on github: https://github.com/Drantho/ReadmeGenerator
+`
 }
 
 module.exports = generateMarkdown;

@@ -1,6 +1,5 @@
 # Readme Generator 
 
-  -------------------------------------------------------------------------------
 
   ## Table of Contents
   - [Description](#description)
@@ -9,10 +8,10 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-  - [License](#license)
+  [License](#license)
   ## Description
 
-  this is a description
+  This is an automatic readme generator. It asks the user questions about their project and automatically creates and formats the readme.md file.
 
   -------------------------------------------------------------------------------
 
@@ -20,7 +19,7 @@
 
   
 
-  none needed. Node.js required
+  undefined
 
   -------------------------------------------------------------------------------
 
@@ -28,7 +27,7 @@
 
   
 
-  run node index.js 
+  Open terminal, navigate to folder, run "node index.js" 
 
   -------------------------------------------------------------------------------
 
@@ -47,12 +46,19 @@
   -------------------------------------------------------------------------------
 
   ## Questions
-  Me on github: https://github.com/drantho
-  Email me at drantho@gmail.com with any questions. 
+  Me on github: https://github.com/Drantho 
+
+  Email me at mitchellanthonyd@gmail.com with any questions. 
 
   -------------------------------------------------------------------------------
 
-  ## License
-  ![MIT](MIT) MIT 
+  
+   ## License 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-  www.MIT.com
+
+   ------------------------------------------------------------------------------
+
+   readme automatically created with Readme Generator 
+
+   view on github: https://github.com/Drantho/ReadmeGenerator

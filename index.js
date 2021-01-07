@@ -2,14 +2,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-const { stringify } = require("querystring");
-
+const licenses = require("./utils/licenses");
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input", 
-        name: "name", 
+        name: "title", 
         message:  "Project name: "
     },
     {
@@ -29,7 +28,7 @@ const questions = [
     },
     {
         type: "input", 
-        iname: "Installation", 
+        name: "installation", 
         message:  "Installation: "
     },
     {
@@ -38,38 +37,26 @@ const questions = [
         message:  "Usage: "
     },
     {
-        type: "checkbox", 
+        type: "list", 
         name: "license", 
         message:  "License: ",
-        choices: [
-            "Apache 2.0 License", 
-            "Boost Software License 1.0", 
-            "BSD 3-Clause License", 
-            "BSD 2-Clause License", 
-            "Createive Commons - CC0", 
-            "Createive Commons - Attribution 4.0 International",
-            "Createive Commons - Attribution-ShareAlike 4.0 International",
-            "Createive Commons - Attribution-NonCommercial 4.0 International",
-            "Createive Commons - Attribution-NoDerivates 4.0 International",
-            "Createive Commons - Attribution-NonCommmercial-ShareAlike 4.0 International",
-            "Createive Commons - Attribution-NonCommercial-NoDerivatives 4.0 International",
-            "Eclipse Public License 1.0",
-            "GNU - GPL v3",
-            "GNU - GPL v2",
-            "GNU - AGPL v3",
-            "GNU - LGPL v3",
-            "GNU - FDL v1.3",
-            "IBM Public License Version 1.0",
-            "ISC License (ISC)",
-            "MIT"
-            
-        ]
+        choices: licenses.map(license => license.name)
     },
+    {
+        type: "input", 
+        name: "contributing", 
+        message:  "Contributing: "
+    },
+    {
+        type: "input", 
+        name: "tests", 
+        message:  "Tests: "
+    }
 ];//, "Github username: ", "Email: ", "Description: ", "Installation: ", "Usage: ", "License: ", "Contributing: ", "Tests: "];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.appendFile(fileName, generateMarkdown(data), (err, file) => {
+    fs.writeFile(fileName, generateMarkdown(data), (err, file) => {
         if (err) console.log(err)
 
         console.log("file created successfuly");
@@ -85,6 +72,8 @@ function init() {
     //TODO Convert to work from list
     inquirer.prompt(questions).then( answers => {
         console.log(answers);
+
+        writeToFile("README.md", answers);
     })
 
 }
