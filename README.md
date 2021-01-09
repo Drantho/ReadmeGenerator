@@ -59,7 +59,7 @@
   ## Future Development 
 
   - Add image links for screenshots. 
-  -  Add image links for walkthroughs 
+  - Add image links for walkthroughs 
 
   -------------------------------------------------------------------------------
 
