@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license){
-    return `[License](#license)`;
+    return `- [License](#license)`;
   }
   return "";
 }
@@ -31,6 +31,17 @@ function renderLicenseSection(license) {
   return "";
 }
 
+function csvToLi(str){
+  const arr = str.split(",");
+  let returnString = "";
+  arr.forEach(element => {
+    element.trim();
+    returnString += `- ${element} \n`;
+  });
+
+  return returnString;
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} \n
@@ -41,6 +52,8 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Tests](#tests)
+  - [Known Issues](#known-issues)
+  - [Future Development](#future-development)
   - [Questions](#questions)
   ${renderLicenseLink(data.license)}
   ## Description\n
@@ -60,6 +73,12 @@ function generateMarkdown(data) {
   -------------------------------------------------------------------------------\n
   ## Tests \n
   ${data.tests} \n
+  -------------------------------------------------------------------------------\n
+  ## Known Issues \n
+  ${csvToLi(data.issues)}
+  -------------------------------------------------------------------------------\n
+  ## Future Development \n
+  ${csvToLi(data.futureDev)}
   -------------------------------------------------------------------------------\n
   ## Questions
   Me on github: https://github.com/${data.username} \n

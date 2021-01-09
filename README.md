@@ -7,11 +7,13 @@
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Tests](#tests)
+  - [Known Issues](#known-issues)
+  - [Future Development](#future-development)
   - [Questions](#questions)
-  [License](#license)
+  - [License](#license)
   ## Description
 
-  This is an automatic readme generator. It asks the user questions about their project and automatically creates and formats the readme.md file.
+  This is an automatic readme.md generator. It asks a series of questions about you and your project then creates a formatted readme file.
 
   -------------------------------------------------------------------------------
 
@@ -19,7 +21,7 @@
 
   
 
-  undefined
+  npm i
 
   -------------------------------------------------------------------------------
 
@@ -27,7 +29,7 @@
 
   
 
-  Open terminal, navigate to folder, run "node index.js" 
+  node index.js 
 
   -------------------------------------------------------------------------------
 
@@ -42,6 +44,19 @@
   ## Tests 
 
   none 
+
+  -------------------------------------------------------------------------------
+
+  ## Known Issues 
+
+  - none 
+
+  -------------------------------------------------------------------------------
+
+  ## Future Development 
+
+  - Add image support. 
+-  Add ability to add multiple images. 
 
   -------------------------------------------------------------------------------
 

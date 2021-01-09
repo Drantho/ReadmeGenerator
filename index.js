@@ -51,9 +51,18 @@ const questions = [
         type: "input", 
         name: "tests", 
         message:  "Tests: "
+    },
+    {
+        type: "input", 
+        name: "issues", 
+        message:  "Known Issues(separate with commas): "
+    },
+    {
+        type: "input", 
+        name: "futureDev", 
+        message:  "Plans for future use(separate with commas): "
     }
-];//, "Github username: ", "Email: ", "Description: ", "Installation: ", "Usage: ", "License: ", "Contributing: ", "Tests: "];
-
+];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), (err, file) => {
