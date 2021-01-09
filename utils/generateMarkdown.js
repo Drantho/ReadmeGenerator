@@ -26,7 +26,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license){
-    return `## License \n ${renderLicenseBadge(license)}`
+    return `## License \n 
+${license} \n
+${renderLicenseBadge(license)}`
   }
   return "";
 }
@@ -45,6 +47,7 @@ function csvToLi(str){
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} \n
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   - [Description](#description)
@@ -85,9 +88,9 @@ function generateMarkdown(data) {
   Email me at ${data.email} with any questions. \n
   -------------------------------------------------------------------------------\n
   
-   ${renderLicenseSection(data.license)} \n
-
-   ------------------------------------------------------------------------------\n
+  ${renderLicenseSection(data.license)} \n
+  
+  ------------------------------------------------------------------------------\n
    readme automatically created with Readme Generator \n
    view on github: https://github.com/Drantho/ReadmeGenerator
 `

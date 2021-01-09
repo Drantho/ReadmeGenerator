@@ -1,5 +1,6 @@
 # Readme Generator 
 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
   - [Description](#description)
@@ -13,7 +14,7 @@
   - [License](#license)
   ## Description
 
-  This is an automatic readme.md generator. It asks a series of questions about you and your project then creates a formatted readme file.
+  This is a readme generator. It asks a series of questions about you and your project then creates a formatted readme file.
 
   -------------------------------------------------------------------------------
 
@@ -30,7 +31,9 @@
   
 
   node index.js 
-
+  walkthrough
+  - gif: ![Walkthrough](walkthrough.gif?raw=true "Walkthrough")
+  - video: https://drive.google.com/file/d/1JVws8j-_YN21q1jSCjYnNhsKfb-AaCkw/view
   -------------------------------------------------------------------------------
 
   ## Contributing 
@@ -55,8 +58,8 @@
 
   ## Future Development 
 
-  - Add image support. 
--  Add ability to add multiple images. 
+  - Add image links for screenshots. 
+  -  Add image links for walkthroughs 
 
   -------------------------------------------------------------------------------
 
@@ -68,11 +71,14 @@
   -------------------------------------------------------------------------------
 
   
-   ## License 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+  ## License 
+ 
+The MIT License 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-   ------------------------------------------------------------------------------
+  
+  ------------------------------------------------------------------------------
 
    readme automatically created with Readme Generator 
 
