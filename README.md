@@ -1,4 +1,4 @@
-# Readme Generator 
+# Portfolio 
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -14,7 +14,7 @@
   - [License](#license)
   ## Description
 
-  This is a readme generator. It asks a series of questions about you and your project then creates a formatted readme file.
+  This is my portfolio. Browse my projects, see technologies I use, and view my contact info.
 
   -------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@
 
   
 
-  npm i
+  none
 
   -------------------------------------------------------------------------------
 
@@ -30,10 +30,8 @@
 
   
 
-  node index.js 
-  walkthrough
-  - gif: ![Walkthrough](walkthrough.gif?raw=true "Walkthrough")
-  - video: https://drive.google.com/file/d/1JVws8j-_YN21q1jSCjYnNhsKfb-AaCkw/view
+  Follow the links! 
+
   -------------------------------------------------------------------------------
 
   ## Contributing 
@@ -58,8 +56,7 @@
 
   ## Future Development 
 
-  - Add image links for screenshots. 
-  - Add image links for walkthroughs 
+  -  
 
   -------------------------------------------------------------------------------
 
